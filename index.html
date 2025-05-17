@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Казик по подаркам</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="main-title">Free case</h1>
+
+  <div class="slot-wrapper">
+    <div class="indicator"></div>
+    <div class="reel" id="reel">
+      <!-- Призы — просто добавляй/меняй путь к картинке -->
+      
+      <img src="gift/1.png" alt="Prize 1" class="prize">
+      <img src="gift/2.png" alt="Prize 2" class="prize">
+      <img src="gift/3.png" alt="Prize 3" class="prize">
+      <img src="gift/4.png" alt="Prize 4" class="prize">
+      <img src="gift/5.png" alt="Prize 5" class="prize">
+      <img src="gift/6.png" alt="Prize 6" class="prize">
+      <img src="gift/7.png" alt="Prize 7" class="prize">
+      <img src="gift/8.png" alt="Prize 8" class="prize">
+      <img src="gift/9.png" alt="Prize 9" class="prize">
+      <img src="gift/10.png" alt="Prize 10" class="prize">
+      <img src="gift/11.png" alt="Prize 11" class="prize">
+      <img src="gift/12.png" alt="Prize 12" class="prize">
+      <img src="gift/13.png" alt="Prize 13" class="prize">
+      <img src="gift/14.png" alt="prize 14" class="prize">
+      <img src="gift/15.png" alt="Prize 15" class="prize">
+      <img src="gift/16.png" alt="Prize 16" class="prize">
+      <img src="gift/17.png" alt="Prize 17" class="prize">
+      <img src="gift/18.png" alt="Prize 18" class="prize">
+      <img src="gift/19.png" alt="Prize 19" class="prize">
+      
+      
+    </div>
+  </div>
+
+  <button id="spin">Spin</button>
+  <button id="withdraw" style="display:none;">Вывести</button>
+
+  <div id="modal" style="display:none; position:fixed; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+    <div id="modal-content" style="background:none; padding:0; border-radius:0; text-align:center; position:relative; box-shadow:none;">
+      <img id="modal-img" alt="Ваш приз" style="width:100%; height:100%; object-fit:cover; display:block;">
+      <button id="modal-withdraw" style="position:absolute; left:50%; bottom:40px; transform:translateX(-50%); padding:15px 40px; font-size:22px; background:#ffb800; color:#222; border:none; border-radius:8px; cursor:pointer;">Вывести</button>
+      <button id="modal-close" style="position:absolute; right:20px; top:20px; font-size:24px; background:none; border:none; color:#fff; cursor:pointer;">×</button>
+    </div>
+  </div>
+  <button id="chooseFileBtn"></button>
+  <input type="file" id="fileInput" accept="image/*" style="display:none;">
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
